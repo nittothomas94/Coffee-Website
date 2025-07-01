@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#3c0d0c] text-white w-full fixed top-0 z-50 shadow-md">
-      <div className="flex justify-between items-center xl:h-[100px] px-6 xl:px-12 2xl:px-24 xl:w-[1200px] max-w-[1500px] mx-auto w-full h-[70px] xl:h-auto">
+      <div className="flex justify-between items-center xl:h-[100px] px-6 xl:px-12 2xl:px-24 xl:w-[1200px] max-w-[1500px] mx-auto w-full h-[70px] ">
         {/* Logo */}
         <div className="flex items-center gap-2 z-50">
           <span className="text-2xl">☕</span>
