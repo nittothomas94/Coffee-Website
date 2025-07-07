@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { motion, Variants } from 'framer-motion';
 
 const testimonials = [
   {
@@ -39,17 +40,33 @@ const testimonials = [
   },
 ];
 
+// Section heading fade-in animation
+const fadeInHeading: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: 'easeOut' },
+  },
+};
+
 const Testimonials = () => {
   return (
-    <section className="w-full py-14 bg-[#fdf6f7] flex items-center justify-center relative">
-      <div className="w-full px-4 xl:w-[1200px] 2xl:w-[1500px] mx-auto text-center">
-        {/* Heading */}
-        <div className="mb-10 group relative inline-block">
-          <h2 className="text-3xl font-extrabold relative z-10">
+    <section className="w-full py-18 2xl:py-[100px] bg-[#fdf6f7] flex items-center justify-center relative px-[5px]">
+      <div className="container-custom text-center">
+        {/* Heading with scroll animation */}
+        <motion.div
+          className="mb-[50px] 2xl:mb-[80px] group relative inline-block"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeInHeading}
+        >
+          <h2 className="text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] font-[700] relative z-10">
             TESTIMONIALS
           </h2>
           <span className="absolute bottom-[-6px] left-1/2 h-[3px] w-8 bg-orange-400 transition-all duration-500 transform -translate-x-1/2 group-hover:left-0 group-hover:w-full group-hover:translate-x-0"></span>
-        </div>
+        </motion.div>
 
         {/* Swiper Carousel */}
         <div className="relative">

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#3c0d0c] text-white w-full fixed top-0 z-50 shadow-md">
-      <div className="container-custom flex justify-between items-center md:h-[80px] xl:h-[100px] h-[70px] ">
+      <div className="container-custom px-[10px] flex justify-between items-center md:h-[80px] xl:h-[100px] h-[70px] ">
         {/* Logo */}
         <div className="flex items-center gap-2 z-50">
           <span className="text-2xl sm:text-[25px] md:text-[30px] xl:text-[35px] 2xl:text-[40px]">
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden xl:flex gap-8 text-lg font-medium">
+        <div className="hidden lg:flex gap-8 text-lg font-medium">
           {navItems.map(item => (
             <ScrollLink
               key={item.name}
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="xl:hidden z-50">
+        <div className="lg:hidden z-50">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
           </button>
