@@ -19,11 +19,15 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#3c0d0c] text-white w-full fixed top-0 z-50 shadow-md">
-      <div className="flex justify-between items-center xl:h-[100px] px-6 xl:px-12 2xl:px-24 xl:w-[1200px] max-w-[1500px] mx-auto w-full h-[70px] ">
+      <div className="container-custom flex justify-between items-center md:h-[80px] xl:h-[100px] h-[70px] ">
         {/* Logo */}
         <div className="flex items-center gap-2 z-50">
-          <span className="text-2xl">☕</span>
-          <span className="text-xl font-semibold">Coffee</span>
+          <span className="text-2xl sm:text-[25px] md:text-[30px] xl:text-[35px] 2xl:text-[40px]">
+            ☕
+          </span>
+          <span className="text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] 2xl:text-[40px] font-[700]">
+            Coffee
+          </span>
         </div>
 
         {/* Desktop Navigation */}
@@ -73,7 +77,7 @@ const Navbar = () => {
               activeClass="text-orange-400"
             >
               <span className="relative z-10">{item.name}</span>
-              <span className="absolute left-1/2 bottom-[-4px] h-[3px] w-4 bg-orange-400 transition-all duration-500 group-hover:left-0 group-hover:w-full transform -translate-x-1/2 group-hover:translate-x-0" />
+              <span className="hidden lg:block absolute left-1/2 bottom-[-4px] h-[3px] w-4 bg-orange-400 transition-all duration-500 group-hover:left-0 group-hover:w-full transform -translate-x-1/2 group-hover:translate-x-0" />
             </ScrollLink>
           ))}
         </div>
