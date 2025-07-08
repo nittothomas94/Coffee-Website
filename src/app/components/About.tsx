@@ -94,9 +94,9 @@ const About = () => {
           >
             At Coffee House in Berndorf, Germany, we pride ourselves on being a
             go-to destination for coffee lovers and conversation seekers alike.
-            We're dedicated to providing an exceptional coffee experience in a
-            cozy and inviting atmosphere, where guests can relax, unwind, and
-            enjoy their time in comfort.
+            We&apos;re dedicated to providing an exceptional coffee experience
+            in a cozy and inviting atmosphere, where guests can relax, unwind,
+            and enjoy their time in comfort.
           </motion.p>
 
           {/* Social Icons */}

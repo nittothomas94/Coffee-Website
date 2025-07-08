@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { FiMenu, FiX } from 'react-icons/fi';
-import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', to: 'home' },
